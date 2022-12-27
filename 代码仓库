@@ -32,3 +32,22 @@ int  main()
     }
     return 0;
 }
+
+
+
+
+
+typedef String book;
+struct LinkNode {
+    book data;
+    LinkNode* next;
+};
+struct LinkList {
+    LinkNode* front;  
+    LinkNode* rear;  
+    LinkNode* pre;    
+    LinkNode* curr;   
+    int position;     
+    int len;          
+};
+
