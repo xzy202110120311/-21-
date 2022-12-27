@@ -21,7 +21,7 @@ int  main()
     if(m<=0)
     {
         printf("错误，m不能小于1");
-    }
+   }
     else if(m>n)
     {
         printf("错误，m不能大于n");
