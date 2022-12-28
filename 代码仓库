@@ -1,3 +1,4 @@
+//借还书
 #include <stdio.h>
 #define  PI  3.14159
 
@@ -163,7 +164,7 @@ if(option1==1){
 	}*/
 }
 else{
-    int option3=0,account2=0,password2=0;
+    int option3=0,option4=0,account2=0,password2=0;
     printf("若您之前使用过此系统，请输入1进行登录，若未使用过请输入2进行注册\n");
     scanf("%d",&option3);
     if(option3==1){
@@ -178,9 +179,21 @@ else{
 		scanf("%d %d",&account2,&password2);
 	}
 	printf("图书系统欢迎你");
+	printf("数字1-3分别对应以下功能\n");
+	printf("1：借书或还书\n:2:修改个人信息\n3:查询书籍信息\n");
+	printf("请输入数字\n");
+	scanf("%d",&option4);
+	/*switch(option4){
+		case 1:brorgb();break;
+		case 2:modSelfinfo();break;
+		case 3:findBookinfo();break;
+	}*/
+}
 	}
+	
 //注册完之后对用户表进行更新
 //根据账号进行堆排序
 //排序完之后对所输入用户进行查找
 }
 }
+
