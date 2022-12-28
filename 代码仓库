@@ -51,13 +51,6 @@ struct LinkList {
     int len;          
 };
 
-
-
-
-
-
-
-
 //登录系统部分代码
 #include<stdio.h>
 typedef struct manager{
@@ -75,7 +68,7 @@ typedef struct user{
 }user;
 
 user users[5]={{"叶艳卉",2021101207,102030},{"刘铱凡",2021101208,102031},{"陈华",2021101209,102032},{"杨策",2021101210,102033},{"谢晶晶",2021101211,10}};
-
+//获取输入数字的位数
 int getSum(int n){
 	int count=0;
 	if(n==0) count=0;
@@ -87,20 +80,20 @@ int getSum(int n){
 }
 	return count;
 }
-
+//数字位数是否为8位（管理员账号）
 int matchSum8(int n){
 int sum1=getSum(n);
 if(sum1==8) return 1;
 else return 0;
 }
-
+//数字位数是否为10位（用户账号）
 int matchSum10(int n){
 	int sum2=getSum(n);
 	if(sum2==10) return 1;
 	else return 0;
 	
 }
-
+//管理员账号密码是否输入正确
 int matchID1(int n1,int n2){
 	int flag2=0;
 	int k=0;
@@ -113,7 +106,7 @@ int matchID1(int n1,int n2){
 if(flag2==1&&n2==managers[k].password1) return 1;
 else return 0;
 }
-
+//用户账号密码是否正确
 int matchID2(int n1,int n2){
 	int flag2=0;
 	int k=0;
@@ -126,7 +119,7 @@ int matchID2(int n1,int n2){
 if(flag2==1&&n2==users[k].password2) return 1;
 else return 0;
 }
-
+//主程序
 int main(){
 int option1=0,option2=0,account1=0,password1=0;
 printf("1代表管理员端，2代表用户端，请选择1或2\n");
