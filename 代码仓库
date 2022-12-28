@@ -58,19 +58,22 @@ struct LinkList {
 
 
 
-
+//登录系统部分代码
 #include<stdio.h>
 typedef struct manager{
 	char name[20];
 	int account1;
 	int password1;
 }manager;
+
 manager managers[5]={{"张明",20190101,208160},{"李华",20190102,208161},{"赵红",20190103,208162},{"王玲",20190104,208163},{"陈思",20190105,208164}};
+
 typedef struct user{
 	char name[20];
 	long account2;
 	int password2;
 }user;
+
 user users[5]={{"叶艳卉",2021101207,102030},{"刘铱凡",2021101208,102031},{"陈华",2021101209,102032},{"杨策",2021101210,102033},{"谢晶晶",2021101211,10}};
 
 int getSum(int n){
@@ -172,10 +175,6 @@ else{
 		scanf("%d %d",&account2,&password2);
 	}
 	printf("图书系统欢迎你");
-
-    	
 	}
-   
 }
-
 }
